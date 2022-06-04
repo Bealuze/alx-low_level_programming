@@ -20,6 +20,7 @@ int main(void)
 
 			while (k < 10)
 			{
+				l = 0;
 				while (l < 10)
 				{
 					if (!(i == l && k == j))
