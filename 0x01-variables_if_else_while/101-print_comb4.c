@@ -5,13 +5,11 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 	int j;
 	int k;
 
-	int i = 0;
-
-	while (i < 10)
+	while (i < 0)
 	{
 		j = 0;
 
