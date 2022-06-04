@@ -8,6 +8,7 @@ int main(void)
 	int i = 0;
 	int j;
 	int k;
+	int l;
 
 	while (i < 10)
 	{
@@ -19,16 +20,22 @@ int main(void)
 
 			while (k < 10)
 			{
-				if (i < j && j < k && i != j && j != k)
+				while (l < 10)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i + j + k != 24)
+					if (!(i == l && k == j))
 					{
-						putchar(',');
+						putchar(i + '0');
+						putchar(j + '0');
 						putchar(' ');
+						putchar(k + '0');
+						putchar(l + '0');
+						if (!(j + i == 18 && l + k == 17 && k == 9))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
+					l++;
 				}
 				k++;
 			}
