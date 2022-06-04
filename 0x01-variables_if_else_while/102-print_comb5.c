@@ -13,11 +13,9 @@ int main(void)
 	while (i < 10)
 	{
 		j = 0;
-
 		while (j < 10)
 		{
 			k = 0;
-
 			while (k < 10)
 			{
 				l = 0;
@@ -30,10 +28,10 @@ int main(void)
 						putchar(' ');
 						putchar(k + '0');
 						putchar(l + '0');
-						if (!(j + i == 18 && l + k == 17 && k == 9))
-						{
-							putchar(',');
-							putchar(' ');
+					if (!(j + i == 18 && l + k == 17 && k == 9))
+					{
+					putchar(',');
+					putchar(' ');
 						}
 					}
 					l++;
