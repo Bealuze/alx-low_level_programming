@@ -9,7 +9,7 @@ int main(void)
 	int j;
 	int k;
 
-	while (i < 0)
+	while (i < 10)
 	{
 		j = 0;
 
