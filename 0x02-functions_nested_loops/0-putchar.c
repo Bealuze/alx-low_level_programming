@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * main- priny
- * Return: always success 0
+ * main- entry points
+ * Return:0
  */
 int main(void)
 {
-	char out[9] = "_putchar";
-	int letter;
+	char c[15] = "_putchar";
+	int x;
 
-	for (letter = 0; letter <= 8; letter++)
-		putchar(out[letter]);
-	putchar('\n');
-
-	return 0;
+	for (x = 0; x <= 8; x++)
+		_putchar(c[x]);
+	_putchar('\n');
+	return (0);
 }
