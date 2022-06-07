@@ -2,7 +2,7 @@
 /**
  *_putchar - print the char out
  **/
-int _putchar(char out)
+int _putchar(char c)
 {
-	return (write(1, &out, 1));
+	return (write(1, &c, 1));
 }
