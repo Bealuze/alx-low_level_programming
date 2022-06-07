@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main- priny
  * Return: always success 0
