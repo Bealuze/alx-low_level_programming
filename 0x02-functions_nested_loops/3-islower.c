@@ -6,8 +6,6 @@
  */
 int _islower(int c)
 {
-	char c;
-
 	if (c == 'c')
 		return (1);
 	else
