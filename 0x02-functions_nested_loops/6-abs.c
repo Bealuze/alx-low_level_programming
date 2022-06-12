@@ -2,17 +2,9 @@
 /**
  * _abs- absolute value
  * return: 0
+ *@x- variable
  */
 int _abs(int x)
 {
-	if (x > 0)
-		_putchar(x);
-	if (x == 0)
-		 _putchar(x);
-	else if (x < 0)
-	{
-		x *= -1;
-		_putchar(-x);
-	}
-	return (0);
+	return (n >= 0 ? n : n * -1);
 }
