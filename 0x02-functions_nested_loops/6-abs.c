@@ -3,9 +3,8 @@
  * _abs- absolute value
  * return: 0
  */
-int _abs(int)
+int _abs(int x)
 {
-	int x;
 	if (x >= 0)
 		_putchar(x);
 	else if (x < 0)
