@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	while (i < 3)
 	{
-		if (j == 2)
+		if (i == 2)
 			x = 3;
 		j = 0;
 		while (j <= x)
