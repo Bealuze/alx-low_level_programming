@@ -8,7 +8,7 @@
 int main(void)
 {
 
-unsigned int long x = 612852475143, y = (int) sqrt(n);
+unsigned int long x = 612852475143, y = (int) sqrt(x);
 
 while (1)
 {
