@@ -5,5 +5,13 @@
  */
 int print_last_digit(int x)
 {
-	return(x % 10);
+	int xy;
+
+	if (x < 0)
+		xy = -1 * (x % 10);
+	else 
+		xy = x % 10;
+	
+	_putchar(xy + '0');
+	return (xy);
 }
