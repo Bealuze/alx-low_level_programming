@@ -8,9 +8,9 @@
 int main(void)
 {
 
-unsigned int long n = 612852475143, a = (int) sqrt(n);
+unsigned int long x = 612852475143, y = (int) sqrt(n);
 
-while (true)
+while (1)
 {
 
 	if (x % y == 0)
