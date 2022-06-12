@@ -2,6 +2,7 @@
 /**
  * print_last_digit- last digit
  * Return:  0
+ * @x: variable
  */
 int print_last_digit(int x)
 {
@@ -9,9 +10,9 @@ int print_last_digit(int x)
 
 	if (x < 0)
 		xy = -1 * (x % 10);
-	else 
+	else
 		xy = x % 10;
-	
+
 	_putchar(xy + '0');
 	return (xy);
 }
