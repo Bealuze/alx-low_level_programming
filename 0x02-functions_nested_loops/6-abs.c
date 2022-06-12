@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs- absolute value
- * return: 0
+ * Return: 0
  * @x : variable
  */
 int _abs(int x)
