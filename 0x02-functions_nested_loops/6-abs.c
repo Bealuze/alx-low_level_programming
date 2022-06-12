@@ -2,9 +2,10 @@
 /**
  * _abs- absolute value
  * return: 0
- *@x- variable
+ * @x : variable
  */
 int _abs(int x)
 {
 	return (x >= 0 ? x : x * -1);
+	return (0);
 }
