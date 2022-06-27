@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print the result of the multiplication 
+ * main - print the result of the multiplication
  * @argc: number
  * @argv: array
  * Return: 0
