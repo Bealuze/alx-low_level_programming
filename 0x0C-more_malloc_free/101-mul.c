@@ -2,30 +2,32 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
+
 /**
- * check1 - determines if any number is zero
+ * _is_zero - determines if any number is zero
  * @argv: argument vector.
+ *
  * Return: no return.
  */
-void check1(char *argv[])
+void _is_zero(char *argv[])
 {
-	int i, n1 = 1, n2 = 1;
+	int i, isn1 = 1, isn2 = 1;
 
 	for (i = 0; argv[1][i]; i++)
 		if (argv[1][i] != '0')
 		{
-			n1 = 0;
+			isn1 = 0;
 			break;
 		}
 
 	for (i = 0; argv[2][i]; i++)
 		if (argv[2][i] != '0')
 		{
-			n2 = 0;
+			isn2 = 0;
 			break;
 		}
 
-	if (n1 == 1 || n2 == 1)
+	if (isn1 == 1 || isn2 == 1)
 	{
 		printf("0\n");
 		exit(0);
@@ -33,29 +35,31 @@ void check1(char *argv[])
 }
 
 /**
- * step2 - set memery to zero in a new array
+ * _initialize_array - set memery to zero in a new array
  * @ar: char array.
  * @lar: length of the char array.
+ *
  * Return: pointer of a char array.
  */
-char *step2(char *ar, int l)
+char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
 
-	for (i = 0; i < l; i++)
+	for (i = 0; i < lar; i++)
 		ar[i] = '0';
-	ar[l] = '\0';
+	ar[lar] = '\0';
 	return (ar);
 }
 
 /**
- * check2 - determines length of the number
+ * _checknum - determines length of the number
  * and checks if number is in base 10.
  * @argv: arguments vector.
  * @n: row of the array.
+ *
  * Return: length of the number.
  */
-int check2(char *argv[], int n)
+int _checknum(char *argv[], int n)
 {
 	int ln;
 
@@ -74,6 +78,7 @@ int check2(char *argv[], int n)
  * program that multiplies two positive numbers.
  * @argc: number of arguments.
  * @argv: arguments vector.
+ *
  * Return: 0 - success.
  */
 int main(int argc, char *argv[])
@@ -83,11 +88,11 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		printf("Error\n"), exit(98);
-	ln1 = check2(argv, 1), ln2 = check2(argv, 2);
-	check1(argv), lnout = ln1 + ln2, nout = malloc(lnout + 1);
+	ln1 = _checknum(argv, 1), ln2 = _checknum(argv, 2);
+	_is_zero(argv), lnout = ln1 + ln2, nout = malloc(lnout + 1);
 	if (nout == NULL)
 		printf("Error\n"), exit(98);
-	nout = step2(nout, lnout);
+	nout = _initialize_array(nout, lnout);
 	k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 	for (; k >= 0; k--, i--)
 	{
